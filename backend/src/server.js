@@ -17,7 +17,13 @@ const addressesRouter = require('./routes/addresses');
 const app = express();
 
 // Middleware cơ bản
-app.use(cors({ origin: process.env.FRONTEND_URL || '*' }));      // cho phép frontend (React) gọi API này
+app.use(cors({
+  origin: [
+    'https://pick-buy.vercel.app',
+    'http://localhost:5173',
+    process.env.FRONTEND_URL
+  ].filter(Boolean)
+}));
 app.use(express.json());   // đọc được JSON trong request body
 
 // Serve ảnh đã upload (truy cập qua http://localhost:5000/uploads/tên-file.jpg)
