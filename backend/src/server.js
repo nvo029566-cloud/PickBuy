@@ -57,7 +57,7 @@ app.use('/api/vouchers', vouchersRouter);
 app.use('/api/carts', cartsRouter);
 app.use('/api/addresses', addressesRouter);
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => {
   console.log(`Server đang chạy tại http://localhost:${PORT}`);
 });
