@@ -260,7 +260,3 @@ Send this link to others so they can access the app.
 - MySQL must be running locally when using local mode
 
 ---
-
-## Author
-
-**Võ Đức Nam** — Web Programming Final Project
