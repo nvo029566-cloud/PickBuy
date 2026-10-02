@@ -9,6 +9,7 @@ import { useToast } from '../context/ToastContext.jsx';
 
 const API_URL = `${import.meta.env.VITE_API_URL}/api/products`;
 const CATEGORIES_URL = `${import.meta.env.VITE_API_URL}/api/categories`;
+const REVIEWS_URL = `${import.meta.env.VITE_API_URL}/api/reviews`;
 
 function ProductDetail() {
   const { id } = useParams();

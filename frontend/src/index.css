@@ -602,7 +602,7 @@ main {
 .auth-form label { font-size: 13px; font-weight: 600; color: #374151; margin-top: 4px; }
 .auth-form input, .auth-form textarea {
   padding: 11px 14px; border: 1px solid #e5e7eb; border-radius: 8px;
-  font-size: 14px; font-family: inherit;
+  font-size: 14px; font-family: inherit; resize: none;
 }
 .auth-form input:focus, .auth-form textarea:focus { outline: none; border-color: #0f766e; }
 .auth-form input:disabled { background: #f3f4f6; color: #9ca3af; }
